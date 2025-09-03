@@ -1,3 +1,7 @@
+<?php
+  $pathToKerntakenDirectory = "kerntaken/";
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -162,12 +166,7 @@
     <h1><a href=".">Lorenzo von Matterhorn</a></h1>
     <p>Student Software Developer op het Vista College</p>
     <nav>
-      <ul>
-        <li><a href="about.php">Over Mij</a></li>
-        <li><a href="projet.php">Projecten</a></li>
-        <li><a href="kerntaken.php">Kerntaken</a></li>
-        <li><a href="contact.php">Contact</a></li>
-      </ul>
+      <?php require_once("mainmenu.php"); ?>
     </nav>
     <div class="mountains"></div>
   </header>
@@ -176,11 +175,11 @@
     <h1>Kerntaken</h1>
     <h2>Realiseert Software</h2>
     <ul>
-      <li><a href="kerntaken/b1k1w1.php">B1-K1-W1 - Stemt opdracht af, plant werkzaamheden en bewaakt de voortgang</a></li>
-      <li><a href="kerntaken/b1k1w2.php">B1-K1-W2 - Maakt een technisch ontwerp voor software</a></li>
-      <li><a href="kerntaken/b1k1w3.php">B1-K1-W3 - Realiseert (onderdelen van) software</a></li>
+      <li><a href="<?php print $pathToKerntakenDirectory; ?>b1k1w1.php">B1-K1-W1 - Stemt opdracht af, plant werkzaamheden en bewaakt de voortgang</a></li>
+      <li><a href="<?php print $pathToKerntakenDirectory; ?>b1k1w2.php">B1-K1-W2 - Maakt een technisch ontwerp voor software</a></li>
+      <li><a href="<?php print $pathToKerntakenDirectory; ?>b1k1w3.php">B1-K1-W3 - Realiseert (onderdelen van) software</a></li>
       <li><a href="kerntaken/b1k1w4.php">B1-K1-W4 - Test software</a></li>
-      <li><a href="kerntaken/b1k1w5.php">B1-K1-W5 - Doet verbetervoorstellen voor de software</a></li>
+      <li><a href="<?php print $pathToKerntakenDirectory; ?>  b1k1w5.php">B1-K1-W5 - Doet verbetervoorstellen voor de software</a></li>
     </ul>
     <h2>Voert ICT-projecten uit</h2>
     <ul>
